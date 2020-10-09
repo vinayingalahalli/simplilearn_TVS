@@ -1,0 +1,15 @@
+1)Java 8
+https://www.oracle.com/in/java/technologies/javase/javase-jdk8-downloads.html
+
+Download  the appropriate version matching to your windows machine.
+It might ask you to create account please sign up. 
+All the tools in this training is free. :)
+
+2)STS(eclipse) IDE
+https://spring.io/tools
+
+3)Create account in GITHUB(Source Code Management(SCM) Tool)
+https://github.com/
+
+4)Download and Install git for your windows OS, just follow default check boxes while installation.
+https://gitforwindows.org/
