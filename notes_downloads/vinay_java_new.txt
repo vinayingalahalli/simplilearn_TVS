@@ -113,7 +113,7 @@ Classname objname=new Constructorname();
 
 Constructors
 ---------------------
-* Constructor is a special method of any class with the same name as the class 
+*Constructor is a special method of any class with the same name as the class 
 name but without any return type.
 *Constructors are used to intialize the environment for any class , i.e 
 whenever an object is getting created for a particular class thats when the
