@@ -8,7 +8,7 @@ OAK - JAVA(island name) - coffee mug. reg under Sun Microsystems pvt LTD.
 
 Microsoft Takes Over Java from 1994 till 2010.
 From 2010 till date officially Sun microsys is part of Oracle Co-op.
-Latest Version - Java 14.2020.
+Latest Version - Java 15. September,2020.
 Official Site - www.oracle.com
 
 Over 3.5 billion devices run on java.
