@@ -464,7 +464,7 @@ Collection F/w
 - List, Set and Map are widely used collections even in advanced f/ws like
 hibernate and spring you get to see lot on these things.
 7)all the collections are part of java.util package
-8)we get to see a utility class called as java.util.Collections in which
+8)we get to see a utility/helper class called as java.util.Collections in which
 you can find sort, search and many other functions which can be applied
 on a Collection.
 
@@ -504,6 +504,7 @@ it will create one more.
 
 Set<E> interface
 ---------------------
+*Set is Unique,Unordered,Unindexed(3 U's) collection.
 *Set is a collection which is unindexed(no positions for elements)
  and it wont allow dups.
 *Set internally uses hashing algorithm which generates the memory 
@@ -511,6 +512,9 @@ based on the input data, hence it wont allow dups.
 *internally it checks for duplications using equals & hashCode method.
 * Set is implemented in HashSet,LinkedHashSet,TreeSet classes.
 *memory by default 16 allocations and load factor is .75 
+
+Watch this video of 15mins only
+https://www.youtube.com/watch?v=c3RVW3KGIIE&t=24s
 
 HashSet<E> class
 -------------------------
