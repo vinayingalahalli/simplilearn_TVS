@@ -1,0 +1,6 @@
+hello from char demo
+no need of conversion in char stream
+if you write or read whatever but conversion is not required
+char streams will be good if you are planning on UNI_CODE stuff
+byte streams are faster than char streams due to byte is low level understood by machine, but char provides unicode support
+so think accordingly and choose the appropriate stream.

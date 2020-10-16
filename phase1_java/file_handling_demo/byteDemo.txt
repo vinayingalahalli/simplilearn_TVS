@@ -1,0 +1,7 @@
+Hey This is a new message now
+Hey This is a new message again
+Good evening.. how are you?
+Hey hi welcome to File Handling
+its using byte stream
+in byte stream when you write you need to convert it to bytes
+and when you read also you need to convert it from byte to readable char
