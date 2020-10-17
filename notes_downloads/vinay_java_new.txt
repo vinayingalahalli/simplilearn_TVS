@@ -283,7 +283,7 @@ x++; // will throw me an error as final variables are non modifiable.
 
 5)Abstraction
 -----------------------------
-abstarct data refers to that data whose implementation details
+abstract data refers to that data whose implementation details
 are hidden.
 the customer or end user is never intrested in how the features are
 implemented, he will be intrested in weather the feature is given to him
