@@ -65,8 +65,8 @@ code.
 
 
 
-OOC
---------
+OOC(Object Oriented Concepts/ Pillars/ Programming)
+-----------------------------------------------------------
 1)Class & Objects
 2)Encapsulation
 3)Inheritance (Code Reusability)
