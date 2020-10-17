@@ -13,3 +13,14 @@ https://github.com/
 
 4)Download and Install git for your windows OS, just follow default check boxes while installation.
 https://gitforwindows.org/
+
+5)MySql Community Server
+https://dev.mysql.com/downloads/windows/installer/8.0.html
+(download the largest file and install it) file size - 427.6M
+
+6)MySql WorkBench
+https://dev.mysql.com/downloads/workbench/
+
+7)Apache Tomcat 9
+https://tomcat.apache.org/download-90.cgi
+(download the core zip file which will be the first option)
