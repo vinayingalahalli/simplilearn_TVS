@@ -10,7 +10,6 @@ public class MySqlConnection {
 	
 	public static Connection getConnection() throws ClassNotFoundException, SQLException {
 		Class.forName("com.mysql.cj.jdbc.Driver");
-		System.out.println("Driver Loaded successfully");
 		String url="jdbc:mysql://localhost:3306/tvs";
 		String username="root";
 		String password="root";

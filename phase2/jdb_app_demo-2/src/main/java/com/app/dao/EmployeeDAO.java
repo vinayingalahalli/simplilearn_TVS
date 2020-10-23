@@ -3,6 +3,7 @@ package com.app.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.List;
 
 import com.app.dbutil.MySqlConnection;
 import com.app.exception.BusinessException;
@@ -63,6 +64,28 @@ public class EmployeeDAO {
 			System.out.println(e);
 			throw new BusinessException("Internal error occured contact SYSADMMIN");
 
+		}
+		return c;
+	}
+	
+	public int createMultipleEmployees(List<Employee> empList) throws BusinessException {
+		int c = 0;
+		try (Connection connection = MySqlConnection.getConnection()) {
+			String sql = "insert into employee(id,name,age,salary,contact) values(?,?,?,?,?)";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			for(Employee employee:empList) {
+			preparedStatement.setInt(1, employee.getId());
+			preparedStatement.setString(2, employee.getName());
+			preparedStatement.setInt(3, employee.getAge());
+			preparedStatement.setDouble(4, employee.getSalary());
+			preparedStatement.setLong(5, employee.getContact());
+			preparedStatement.addBatch();
+			}
+			c = preparedStatement.executeBatch().length;
+
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println(e);
+			throw new BusinessException("Internal error occured contact SYSADMMIN");
 		}
 		return c;
 	}
