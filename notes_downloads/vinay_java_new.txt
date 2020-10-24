@@ -772,6 +772,54 @@ https://jersey.java.net/download.html
 
 
 
+Servlets
+---------------------
+*Servlet is a server-side scripting tool.
+*Servlet is capable of reading incoming request made by the client and generating an appropriate response 
+back to the client.
+*Servlets are written using Java and you write all the servlet code in .java file only.
+*Web Servers like Apache Tomcat, Glassfish, Weblogic, WebSphere etc provide the containers to execute the
+servlet within them.
+*Within the container the life cyle of the Servlet's gets executed.
+*Servlet has 3 life cycle stages ->
+	1)void init(ServletConfig)
+		- This is the first of the Servlet Life Cycle where when an active request comes in to
+			to that servlet for the first time, then this method gets executed where the object
+			for the Servlet is created and any initialization parameters required for the Servlet
+			will be passed via the ServletConfig, and this init() gets executed only and only once
+			throughout the life cycle of the Servlet.
+	2)void service(ServletRequest, ServletResponse)
+			-This is the phase where you write the logic of what exactly the servlet should do which
+			means, we write here the code to handle the incoming request(ServletRequest) and 
+			process the logic and generate the response(ServletResponse) back to the client.
+			This phase gets executed multiple times for every single request.
+	3)void destroy()
+			-This is the last phase of the Servlet life cycle where if there is no active
+			request on this servlet then the container invokes the destroy method via which this
+			servlet gets unloaded from the memory. This phase also execute only once 
+			throughtout the life cycle of the servlet
+
+*Servlet Hierarchy-
+Servlet(I) - Root interface where all the servlet life cycle methods are declared.
+GenericServlet(AC) implements Servlet(I) - This servlet implements all the life cycle methods specified in
+				Servlet(I) and it works with any protocol like http, smtp ,pop etc
+HttpServlet(AC) extends GenericServlet(AC) - This servlet gets all the properties of GenericServlet but it
+				gives more solution for handling requests for http specific methods too.
+				Eg: for get request we get instead of service we can write doGet() and
+				for post we can write doPost for put we can doPut and etc for all the http
+				methods which are available. 
+				in HttpServlet the parameters of service which is ServletRequest and 
+				ServletResponse gets updated to HttpServletRequest and HttpServletResponse
+				respectively.
+
+Note : service method can handle any type of incoming request, but if you think of modular ways of programming
+	where we say about seperation of code, this can be done by HttpServlet where it is giving http specific
+	methods within the servlet to handle the requests.
+	Also do remember that if service() , doGet() , doPost() are written at a time then no matter whatever
+	request you place the container will execute only and only service().   Only if the service() method
+	is not there, that's when for the http specific request the http specific method in the servlet will
+	handle it.
+	 
 
 
 9 JSP Implicit Objects
