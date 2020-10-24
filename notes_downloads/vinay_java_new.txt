@@ -819,6 +819,29 @@ Note : service method can handle any type of incoming request, but if you think 
 	request you place the container will execute only and only service().   Only if the service() method
 	is not there, that's when for the http specific request the http specific method in the servlet will
 	handle it.
+
+3 Scopes in Servlets
+---------------------------
+*Scopes refer to how the data can be carried out between the servlets and JSP's
+1) ServletRequest (request scope) -> this is active until the current request is running as the 
+				     new request(new URI) the old request is gone.
+2) ServletContext (application/context scope) -> this is applicable to entire application, any values
+					here you can exchange between any servlet and any JSP 
+					throughout the application.
+3) HttpSession (session scope) ->this scope is per user, a session means the time the user has logged in
+				and until he logs out from the application, so every user will have his own 
+				session and we can share the data of that user within his session scope.
+
+
+ServletConfig Vs ServletContext
+---------------------------------------
+-any configuration parameters specific to any Servlet you can pass it via ServletConfig, which also means that
+that it is specific to that servlet only and no other servlets will be able to access it.
+we can use <init-param> tag within the <servlet> tag of web.xml to give any initialization params for that 
+particular servlet. if you observe life cycle methods ServletConfig is parameter of init().
+-any configuration parameters which you wish to pass to entire application where any Servlet or any JSP
+should be able to access it via ServletContext(application scope), we can define in web.xml using
+<context-param>  tag anywhere within entire web.xml file but within <web-app>
 	 
 
 
