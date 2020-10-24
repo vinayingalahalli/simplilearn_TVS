@@ -52,15 +52,27 @@ public class Main {
 			int age =40;
 			List<Employee> empList=s.getEmployeesByAge(age);
 			if(empList.size()>0) {
-				System.out.println("We found total "+empList.size()+" no of employees with age "+age+" Details are :");
+				System.out.println("\nWe found total "+empList.size()+" no of employees with age "+age+" Details are :");
 				for(Employee e:empList) {
 					System.out.println(e);
 				}
 			}
 		} catch (BusinessException e) {
-			System.out.println(e.getMessage());
+			System.out.println("\n"+e.getMessage());
 		}
-
+		try {
+			int min =20000;
+			int max = 60000;
+			List<Employee> empList=s.getEmployeesBySalaryRange(min, max);
+			if(empList.size()>0) {
+				System.out.println("\nWe found total "+empList.size()+" no of employees with salary range "+min+"-"+max+" Details are :");
+				for(Employee e:empList) {
+					System.out.println(e);
+				}
+			}
+		} catch (BusinessException e) {
+			System.out.println("\n"+e.getMessage());
+		}
 
 	}
 

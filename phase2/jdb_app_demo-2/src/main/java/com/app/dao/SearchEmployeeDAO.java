@@ -61,4 +61,32 @@ public class SearchEmployeeDAO {
 		}
 		return empList;
 	}
+	
+public List<Employee> getEmployeesBySalaryRange(int min,int max) throws BusinessException {
+		
+		List<Employee> empList=new ArrayList<>();
+		try (Connection connection = MySqlConnection.getConnection()) {
+			String sql = "select id,name,salary,contact,age from employee where salary between ? and ?";
+			PreparedStatement preparedStatement = connection.prepareStatement(sql);
+			preparedStatement.setInt(1, min);
+			preparedStatement.setInt(2, max);
+			ResultSet resultSet = preparedStatement.executeQuery();
+			while (resultSet.next()) {
+				Employee employee = new Employee(resultSet.getInt("id"), resultSet.getString("name"), resultSet.getInt("age"),
+						resultSet.getDouble("salary"), resultSet.getLong("contact"));
+				empList.add(employee);
+			}
+			
+			if(empList.size()==0) {
+				throw new BusinessException("No Emloyees found within the salary range of "+min+"-"+max);
+			}
+
+		} catch (ClassNotFoundException | SQLException e) {
+			System.out.println(e);
+			throw new BusinessException("Internal error occured contact SYSADMMIN");
+
+		}
+		return empList;
+	}
+	
 }
