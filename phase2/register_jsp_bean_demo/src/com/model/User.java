@@ -10,7 +10,7 @@ public class User {
 	private String gender;
 	private long contact;
 	private String country;
-	private String[] hobbies;
+	private String[] hobby;
 	private String email;
 	private String address;
 	
@@ -66,12 +66,12 @@ public class User {
 		this.country = country;
 	}
 
-	public String[] getHobbies() {
-		return hobbies;
+	public String[] getHobby() {
+		return hobby;
 	}
 
-	public void setHobbies(String[] hobbies) {
-		this.hobbies = hobbies;
+	public void setHobby(String[] hobby) {
+		this.hobby = hobby;
 	}
 
 	public String getEmail() {
@@ -93,7 +93,7 @@ public class User {
 	@Override
 	public String toString() {
 		return "User [id=" + hashCode() + ", fullname=" + fullname + ", age=" + age + ", gender=" + gender + ", contact="
-				+ contact + ", country=" + country + ", hobbies=" + Arrays.toString(hobbies) + ", email=" + email
+				+ contact + ", country=" + country + ", hobbies=" + Arrays.toString(hobby) + ", email=" + email
 				+ ", address=" + address + "]";
 	}
 	
