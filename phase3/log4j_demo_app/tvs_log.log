@@ -1,0 +1,20 @@
+com.app.main.Main  [INFO] -    Hello from INFO    21-Nov-2020 Saturday 10:58:44 +0530 
+com.app.main.Main  [WARN] -    Hello from WARN    21-Nov-2020 Saturday 10:58:44 +0530 
+com.app.main.Main  [ERROR] -    Hello from ERROR    21-Nov-2020 Saturday 10:58:44 +0530 
+com.app.main.Main  [FATAL] -    Hello from FATAL    21-Nov-2020 Saturday 10:58:44 +0530 
+com.app.service.MyService  [INFO] -    Hello VINAY from helloMyService()    21-Nov-2020 Saturday 10:58:44 +0530 
+com.app.service.MyService  [INFO] -    Bye Bye from helloMyService()    21-Nov-2020 Saturday 10:58:44 +0530 
+com.app.main.Main  [INFO] -    Hello from INFO    21-Nov-2020 Saturday 10:59:15 IST 
+com.app.main.Main  [WARN] -    Hello from WARN    21-Nov-2020 Saturday 10:59:15 IST 
+com.app.main.Main  [ERROR] -    Hello from ERROR    21-Nov-2020 Saturday 10:59:15 IST 
+com.app.main.Main  [FATAL] -    Hello from FATAL    21-Nov-2020 Saturday 10:59:15 IST 
+com.app.service.MyService  [INFO] -    Hello VINAY from helloMyService()    21-Nov-2020 Saturday 10:59:15 IST 
+com.app.service.MyService  [INFO] -    Bye Bye from helloMyService()    21-Nov-2020 Saturday 10:59:15 IST 
+com.app.main.Main  [INFO] -    Hello from INFO    21-Nov-2020 Saturday 11:02:01 IST 
+com.app.main.Main  [WARN] -    Hello from WARN    21-Nov-2020 Saturday 11:02:01 IST 
+com.app.main.Main  [ERROR] -    Hello from ERROR    21-Nov-2020 Saturday 11:02:01 IST 
+com.app.main.Main  [FATAL] -    Hello from FATAL    21-Nov-2020 Saturday 11:02:01 IST 
+com.app.service.MyService  [INFO] -    Hello VINAY from helloMyService()    21-Nov-2020 Saturday 11:02:01 IST 
+com.app.service.MyService  [INFO] -    Bye Bye from helloMyService()    21-Nov-2020 Saturday 11:02:01 IST 
+com.app.service.MyService  [INFO] -    Hello RAJ from helloMyService()    21-Nov-2020 Saturday 11:02:01 IST 
+com.app.service.MyService  [INFO] -    Bye Bye from helloMyService()    21-Nov-2020 Saturday 11:02:01 IST 
